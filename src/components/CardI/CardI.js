@@ -5,7 +5,6 @@ import './cardI.css';
 const CardI = (props) => {
 	const [add, setAdd] = useState(false);
 	const [message, setMessage] = useState('');
-	// const [title, settitle] = useState('');
 
 	const submitMessage = () => {
 		if (message === '') return alert('La descripción esta vacía');
@@ -14,10 +13,6 @@ const CardI = (props) => {
 			const json = localStorage.getItem('lists');
 			const list = JSON.parse(json);
 			list[props.category].cards.push(message);
-			// list[props.category].cards.push({
-			// 	title: title,
-			// 	message: message,
-			// });
 			props.updateList(list);
 			setAdd(false);
 			setMessage('');
@@ -28,7 +23,6 @@ const CardI = (props) => {
 		<div className='addCard'>
 			{add === true ? (
 				<>
-					{/* <input value={title} onChange={(e) => settitle(e.target.value)} type='text' /> */}
 					<textarea
 						className='inputCard'
 						placeholder='Descripción'

@@ -13,19 +13,19 @@ const Cards = (props) => {
 	};
 
 	return (
-		<Droppable droppableId={`list-${props.index}`}>
+		<Droppable droppableId={`list-${props.index}`} key={`list-${props.index}`}>
 			{(provided) => (
 				<div className='cards' ref={provided.innerRef} {...provided.droppableProps}>
 					{props.data.map((card, index) => (
-						<Card
-							index={index}
-							category={props.index}
-							key={index}
-							message={card}
-							deleteCard={() => {
-								deleteCard(index);
-							}}
-						/>
+						<div className='containerCard' key={index}>
+							<Card
+								index={index}
+								category={props.index}
+								key={index}
+								message={card}
+								deleteCard={deleteCard}
+							/>
+						</div>
 					))}
 					{provided.placeholder}
 				</div>

@@ -7,7 +7,6 @@ const ListI = (props) => {
 	const [title, setTitle] = useState('');
 
 	function submitList() {
-		if (title.length < 3) return alert('El título debe contener al menos 3 caracteres.');
 		if (title !== '') {
 			let json = localStorage.getItem('lists');
 			let list = JSON.parse(json);
@@ -33,6 +32,7 @@ const ListI = (props) => {
 						value={title}
 						onChange={(e) => setTitle(e.target.value)}
 					/>
+
 					<button onClick={submitList} className='buttonList'>
 						Agregar
 					</button>

@@ -44,3 +44,8 @@
 .buttonCard:hover {
 	background: #263159;
 }
+
+.deleteCard {
+	cursor: pointer;
+	z-index: 200;
+}

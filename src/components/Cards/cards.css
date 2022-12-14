@@ -1,3 +1,14 @@
 .cards {
 	min-height: 10px;
 }
+
+.containerCard {
+	position: relative;
+}
+
+.deleteCard {
+	position: absolute;
+	right: 4%;
+	bottom: 5%;
+	cursor: pointer;
+}

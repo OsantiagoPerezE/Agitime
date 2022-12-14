@@ -1,6 +1,6 @@
 import React from 'react';
 import {Draggable} from 'react-beautiful-dnd';
-import Priority from '../Priority/Priority';
+import {RiDeleteBin5Line} from 'react-icons/ri';
 import './card.css';
 
 const Card = (props) => {
@@ -10,10 +10,12 @@ const Card = (props) => {
 				<div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
 					<div className='card'>
 						{props.message}
-						<div className='content-priority'>
-							<Priority />
-						</div>
-						<i onClick={props.deleteCard} className='icon' aria-hidden='true' />
+						<RiDeleteBin5Line
+							className='deleteCard'
+							onClick={() => {
+								props.deleteCard(props.index);
+							}}
+						/>
 					</div>
 				</div>
 			)}
