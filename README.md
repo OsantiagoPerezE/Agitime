@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Reto Retrypay 2022 Agitime - React js
+
+Para lograr tener una vida mas agil y ordenada y no tener que tener estar recordando aquellas tareas que debemos hacer a lo largo de nuestro dia, desarrolle una aplicacion llamada Agitime.
+Agitime es una aplicacion que permite crear listas de tareas, agruparlas y ordenarlas dependiendo de la importancia y necesidad.
+
+Agitime esta construida con react, el almacenamiento es local y se utiliza para almacenar los datos.
+Puede crear varios estado con diferentes fondos. Cada estado puede tener varias tareas y las tareas se pueden arrastrar entre estados o posicionar en el msimo estado pero distinta posicion.
+
+Para obtener este proyecto se debe clonar:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
