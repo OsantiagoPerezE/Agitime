@@ -1,0 +1,12 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0px;
+	color: #251749;
+}
+.text-logo-header {
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}

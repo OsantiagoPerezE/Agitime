@@ -1,0 +1,46 @@
+.addCard {
+	padding: 5px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	cursor: pointer;
+	background: rgba(19, 19, 19, 0.08);
+}
+
+.inputCard {
+	margin: 5px 0px;
+	padding: 5px;
+	border: none;
+	outline: none;
+	resize: none;
+	border-radius: 3px;
+	min-width: 85%;
+}
+.buttonsCard {
+	margin-top: 5px;
+	display: flex;
+}
+.buttonsCard .buttonCard {
+	width: 100%;
+}
+.buttonCard {
+	width: 93%;
+	padding: 10px 20px;
+	margin: 2px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background: #495579;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.buttonCard:hover {
+	background: #263159;
+}

@@ -1,0 +1,47 @@
+.lists {
+	margin-top: 5px;
+}
+.lists .categories {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.lists .categories .category {
+	flex-basis: 24%;
+	background: rgba(19, 19, 19, 0.2);
+	min-height: 80px;
+	box-sizing: content-box;
+	margin: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.lists .categories .category .title {
+	position: relative;
+	font-weight: bold;
+	font-size: 18px;
+	background: #263159;
+	padding: 10px 5px;
+	display: flex;
+	padding-right: 25px;
+	word-break: break-all;
+}
+
+.lists .categories .category .title .icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #fff;
+}
+.lists .categories .category .text {
+	margin: 4px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+@media (max-width: 1200px) {
+	.lists .categories .category {
+		flex-basis: 100%;
+		min-height: 120px;
+	}
+}
