@@ -1,4 +1,4 @@
-# Reto Retrypay 2022 Agitime - React js
+# Reto Retrypay 2022 Agitime -- React js
 
 Para lograr tener una vida más ágil y ordenada y no tener que estar recordando aquellas tareas que debemos hacer a lo largo de nuestro día, desarrollé una aplicación llamada Agitime.
 
